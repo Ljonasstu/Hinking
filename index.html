@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking</title>
+    <style>
+        h1{
+         text-align: center;  
+         color: #000; 
+        }
+
+        h2{
+            text-align: center;
+            border: 1px solid #000;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 95%;
+            border-radius: 10px;
+        }
+
+        p{
+            line-height: 1,5;
+            font-size: 24px;
+            margin: 20px 0 10px;
+
+        }
+
+    button{
+        display: block;
+    margin: 20px auto;
+    background-color: rgb(19, 49, 38);
+    font-size: 90%;
+    padding: 40px 20px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px;
+    transition: all 200ms ease-in-out;
+    }
+    
+    button:hover{
+        opacity:0.9;
+        cursor: pointer;
+    }
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 500px 1000px;
+} 
+
+.learn-more {
+color: #df0b0b;
+text-decoration: none;
+font-size: 18px;
+}
+
+.learn-more:hover{
+    text-decoration:underline ;
+}
+
+.footer{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="hiking">
+    <h1>Hiking is therapeutic</h1>
+    <h2>Hiking soothes and clears the Mind</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/311/original/green-mountains.jpg?1714673069" alt="Hiking">
+    <p>Whats great is no matter the shape youre in, you can even reap these benefits from a small hike. As we deeply breathe in the wilderness, the stagnant things seem to fall away. Feeling very much alive; the hike ends with us refreshingly fatigued, and yet somehow better equipped to handle “civilization”. The sense of accomplishment is gratifying enough to improve our perception on all things in life.
+        <br/>
+        <a href="https://americanhiking.org/blog/hiking-natures-therapy/"
+         target="_blank"
+         class="learn-more"
+         >
+            learn more on Americanhiking
+    <button class="join-button">
+        Join hiking nature therapy
+    </button>
+    <p class="footer">
+       This page was built by Lungelo Jonas
+    </a>  
+    </p>
+</div>
+<script>function join() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite trail?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, you can browser through for a trail!" +
+            emoji
+        );
+      }
+
+    let joinButton = document.querySelector(".join-button");
+    joinButton.addEventListener("click",join);
+</script>
+</body>
+</html>
